@@ -18,26 +18,23 @@ $primary-color: #272727;
 
 .menu-nav {
   position: fixed;
-  display: block;
+  display: flex;
   bottom: 0.5rem;
   width: 90vw;
   border: 2px solid;
   text-align: center;
   overflow: visible;
   background: #fff;
+  justify-content: space-evenly;
   
   &__item {
-    
-    display: inline-block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    align-items: center;
-    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 2rem;
   }
   &__link {
     font-family: 'Arial';
     color:rgb(0, 184, 245);
+    
   }
 }
