@@ -1,3 +1,100 @@
+:root {
+  --white: #f0f0f0;
+  --light-grey: #ebe0e0;
+  --black: #111111;
+  --dark-gray: #272727;
+  --bg: var(--white);
+  --txt: var(--black);
+  --dark-opacity: 0;
+  --light-opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  background-color: var(--bg);
+  color: var(--txt);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  min-height: 100vh;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; */
+  background: var(--txt);
+  border-radius: 5rem;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 3.75rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.label {
+  background: var(--txt);
+  border-radius: 5rem;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 3.75rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.label .ball {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: var(--bg);
+  border-radius: 50%;
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+  -webkit-transition: -webkit-transform 0.3s ease background 0.5s ease;
+  transition: -webkit-transform 0.3s ease background 0.5s ease;
+  transition: transform 0.3s ease background 0.5s ease;
+  transition: transform 0.3s ease background 0.5s ease, -webkit-transform 0.3s ease background 0.5s ease;
+}
+
+.checkbox:checked + .content .label .ball {
+  -webkit-transform: translatex(1.8rem);
+          transform: translatex(1.8rem);
+}
+
+.checkbox:checked + .content {
+  --bg: var(--black);
+  --txt: var(--white);
+  --dark-opacity: 1;
+  --light-opacity: 0;
+}
+
 .main-header {
   color: #00a2ff;
   text-align: center;
@@ -5,11 +102,15 @@
 }
 
 .logo {
-  position: fixed;
-  left: 0;
-  right: 15rem;
-  margin-right: 10vw;
-  margin-left: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30%;
 }
 
