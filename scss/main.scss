@@ -1,17 +1,19 @@
+@import 'darkmode';
+
 .main-header {
   color: rgb(0, 162, 255);
   text-align: center;
   font-family: 'Arial';
 }
 
+
+
 $primary-color: #272727;
 
 .logo{
-  position: fixed;
-  left: 0;
-  right: 15rem;
-  margin-right: 10vw;
-  margin-left: 70vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
 }
 
@@ -38,3 +40,4 @@ $primary-color: #272727;
     
   }
 }
+
