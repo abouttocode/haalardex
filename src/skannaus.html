@@ -14,11 +14,29 @@
   </header>
   <main class="main-main">
     <h1>Scanner</h1>
-    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo quisquam optio adipisci repellat, quidem impedit et autem alias ad.</p>
+
+    <!-- Kamera joka toimii browseril ja mobiililla -->
+    <div class="camera">
+      <video id="video">Video stream not available.</video>
+      <button id="startbutton">Take photo of the badge</button>
+    </div>
+    <canvas id="canvas" hidden>
+    </canvas>
+    <div class="output">
+      <img id="photo" alt="The screen capture will appear in this box.">
+    </div>
+
+    <p class="p1">Upload photo of badge to database...</p>
+    
+    <form>
+      <input type="text" placeholder="Name of badge">
+      <button type="submit">Upload</button>
+      <p class="p2"><i>TO-DO: Actual upload button</i></p>
+    </form>
     <div class="main-footer">
       <ul class="menu-nav">
         <li class="menu-nav__item active">
-          <a href="profiili.html" class="menu-nav__link">
+          <a href="index.html" class="menu-nav__link">
             <img src="../img/user_harmaa_s2x.png" alt="Profiili">
           </a>
 
@@ -46,5 +64,6 @@
 
   <script src="https://kit.fontawesome.com/e9d517e09f.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/camera.js"></script>
 </body>
 </html>
