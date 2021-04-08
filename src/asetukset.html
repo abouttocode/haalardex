@@ -22,15 +22,21 @@
     <a href="./index.html"><h1 class=alt-logo><img src="../img/logo.png" alt="HaalarDex" class="logo"></h1></a>
   </header>
   <main class="main-main">
-    <h1>Settings</h1>
-    <p class="p1"></p>
+
+    <p id="header">
+      Settings
+    </p>
+
+
     <p>
     Language: 
     <select name="language-selector" id="carSelect">Select:
-      <option lang="en"  value="English"selected>English</option>
-      <option lang="fi"  value="Suomi">Suomi</option>
-      <option lang="swe" value="Swedish">Svenska</option>
+      <option href="#eng" data-reload>English</option>
+      <option href="#fin" data-reload>Suomi</option>
+      <option href="#swe" data-reload>Svenska</option>
     </select>
+
+    <script src="/js/language.js"></script>
 
     <p>Theme:
     <select name="Theme" id="carSelect">Select:
