@@ -86,3 +86,19 @@
   --dark-opacity: 1;
   --light-opacity: 0;
 }
+
+.menu-nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0.5rem;
+  width: 100vw;
+  border: 1px solid;
+  text-align: center;
+  overflow: visible;
+  background: var(--bg);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
